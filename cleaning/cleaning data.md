@@ -68,4 +68,4 @@ Rivercity:-
 
 3) Dropped all the duplicate entries in the merged csv
 4) Dropped the following columns 'Payer', 'financialClassName', 'payerDescription', 'reimbursement'
-5) Renamed 'countryCode' to 'CountyCode'
+5) Renamed 'countryCode' to 'CountyCode'.
