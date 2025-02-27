@@ -1,0 +1,80 @@
+mediscribes:
+	DocumentID(int): Unique ID of each document
+	Speciality(varchar): A branch of medicine that focuses on a specific area of the body, type of condition, or patient population
+	HospitalId(varchar): Id of the hospital
+	HospitalName(varchar): #### Dropped
+	Short_HospitalName(varchar): #### Dropped
+	HospitalTimeZone(varchar): #### Dropped
+	WorkType(varchar): Type of document based on service provided
+	DocPath(varchar): S3 path of the document
+	DocName(varchar): Name of the document
+	Received_Audio_File_Path(varchar): S3 path of the audio file received
+	Received_Audio_File_Name(varchar): Name of the audio file received
+	PhysicianID(int): Id of the physician
+	Physiciangender(varchar): Gender of the Physician
+	PatientClass(varchar): Identifies whether a patient was an inpatient, outpatient, or emergency patient at the time of the encounter
+	PatientType(varchar): Different categories of patients based on their treatment setting or location within a healthcare facility
+	PatientGender(varchar): Gender of the patient
+	PatientId(varchar): Unique Id of the patient
+	Char_Count_With_Space(int): Number of characters present without including space
+	Char_Count_Without_Space(int): Number of characters present including space
+	Race(varchar): #### Dropped
+	Audio_Sec(int): Duration of audio data in seconds
+	DocCharCount:(int) Number of characters present in a document
+	AdmissionDate(Date): The date at which the patient was admitted
+pulse:
+	DocumentID(int): Unique ID of each document
+	path(varchar): S3 path of the document
+	Speciality(varchar): A branch of medicine that focuses on a specific area of the body, type of condition, or patient population
+	WorkType(varchar): Type of document based on service provided
+	Physiciangender(varchar): Gender of the physician
+	PatientGender(varchar): Gender of the patient
+	PatientClass(varchar): Identifies whether a patient was an inpatient, outpatient, or emergency patient at the time of the encounter
+	PatientId(int): Unique Id of the patient
+	PhysicianID(int): Unique Id of the physician
+	HospitalId(int): Id of the hospital
+	DataType(varchar): Type of data collected(Audio, Document, Audio and Document)
+	Audio_Sec(int): Duration of audio data in seconds
+	Char_Count_Without_Space(int): Number of characters present without including space
+	Char_Count_With_Space(int): Number of characters present including space
+rivercity:
+	documentID(int): Unique Id of the document
+	doccontenttype(varchar): Type of content in the document
+	DocumentType(varchar): Type of document based on its extension.
+	docPath(varchar): The S3 path of the document
+	hospital(varchar): Code of the hospital
+	LOS(int): Length of stay - How many days the patient was admitted
+	mrn(varchar): Unique ID assigned to a patient for a particular hospital
+	accountno(varchar):  The unique ID provided for a patient’s visit into the hospital
+	dateofadmition(DateTime): Date at which the patient was admitted
+	dateofdischarge(DateTime): Date at which the patient was dischraged
+	dateofservice(DateTime): The date on which the patient was treated or seen
+	Gender(varchar): Gender of the patient
+	patientclassdesc(varchar): Identifies whether a patient was an inpatient, outpatient, or emergency patient at the time of the encounter
+	Payer(varchar): An organization, person, or entity that pays for healthcare services #### Dropped
+	financialClassName(varchar): #### Dropped
+	zipCode(int): ##skip for now
+	city(varchar): ##skip for now
+	State(varchar): ##skip for now
+	countyCode(varchar): ##skip for now
+	serviceLineCode: #### Dropped
+	serviceLineDesc(varchar): A branch of medicine that focuses on a specific area of the body, type of condition, or patient population
+	dischargeispositionDesc(varchar): The final place or setting to which the patient was discharged on the day of discharge.
+	Age(int): The age of the patient
+	hospitalName(varchar): Name of the hospital
+	mdc(int): Major Disease condition
+	mdc_description(varchar): Description of mdc(Major Disease condition)
+	drgType(varchar): Diagnosis-Related Group (DRG) types, which are used in medical billing and hospital reimbursement
+	drg_description(varchar): Diagnosis-Related Group (DRG) description, which provides a textual explanation of a specific DRG code
+	reimbursement: #### Dropped
+	amlos(decimal): Average Length of Stay
+	gmlos(decimal): Geometric Mean Length of Stay (GMLOS) is a metric that measures the average length of hospital stays for inpatients
+	risk_of_mortality(int): How much risk of dying the patient has on the scale of 0 to 4
+	severity_of_illness(int): How severe the disease is on the scale of 0 to 4
+	grouperType: #### Dropped
+	payerDescription: #### Dropped
+	codes(varchar): ICD10 codes
+	codeDesc(varchar): The description of ICD 10 codes
+	DRGCode(int): DRG codes
+	RefinedWorktype(varchar): The updated work type and this is being used to get the work type information
+	Specialty(varchar): A branch of medicine that focuses on a specific area of the body, type of condition, or patient population
